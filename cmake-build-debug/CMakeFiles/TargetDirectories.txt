@@ -1,3 +1,3 @@
-C:/study/data-structure/cmake-build-debug/CMakeFiles/c.dir
-C:/study/data-structure/cmake-build-debug/CMakeFiles/edit_cache.dir
-C:/study/data-structure/cmake-build-debug/CMakeFiles/rebuild_cache.dir
+C:/code/data-structure/cmake-build-debug/CMakeFiles/c.dir
+C:/code/data-structure/cmake-build-debug/CMakeFiles/edit_cache.dir
+C:/code/data-structure/cmake-build-debug/CMakeFiles/rebuild_cache.dir

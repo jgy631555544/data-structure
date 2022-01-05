@@ -52,10 +52,10 @@ RM = "C:\Program Files\JetBrains\CLion 2021.3\bin\cmake\win\bin\cmake.exe" -E rm
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = C:\study\data-structure
+CMAKE_SOURCE_DIR = C:\code\data-structure
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = C:\study\data-structure\cmake-build-debug
+CMAKE_BINARY_DIR = C:\code\data-structure\cmake-build-debug
 
 # Include any dependencies generated for this target.
 include CMakeFiles/c.dir/depend.make
@@ -71,30 +71,30 @@ include CMakeFiles/c.dir/flags.make
 CMakeFiles/c.dir/main.cpp.obj: CMakeFiles/c.dir/flags.make
 CMakeFiles/c.dir/main.cpp.obj: ../main.cpp
 CMakeFiles/c.dir/main.cpp.obj: CMakeFiles/c.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\study\data-structure\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object CMakeFiles/c.dir/main.cpp.obj"
-	C:\PROGRA~1\mingw64\bin\G__~1.EXE $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/c.dir/main.cpp.obj -MF CMakeFiles\c.dir\main.cpp.obj.d -o CMakeFiles\c.dir\main.cpp.obj -c C:\study\data-structure\main.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\code\data-structure\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object CMakeFiles/c.dir/main.cpp.obj"
+	C:\code\mingw64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/c.dir/main.cpp.obj -MF CMakeFiles\c.dir\main.cpp.obj.d -o CMakeFiles\c.dir\main.cpp.obj -c C:\code\data-structure\main.cpp
 
 CMakeFiles/c.dir/main.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/c.dir/main.cpp.i"
-	C:\PROGRA~1\mingw64\bin\G__~1.EXE $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E C:\study\data-structure\main.cpp > CMakeFiles\c.dir\main.cpp.i
+	C:\code\mingw64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E C:\code\data-structure\main.cpp > CMakeFiles\c.dir\main.cpp.i
 
 CMakeFiles/c.dir/main.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/c.dir/main.cpp.s"
-	C:\PROGRA~1\mingw64\bin\G__~1.EXE $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S C:\study\data-structure\main.cpp -o CMakeFiles\c.dir\main.cpp.s
+	C:\code\mingw64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S C:\code\data-structure\main.cpp -o CMakeFiles\c.dir\main.cpp.s
 
 CMakeFiles/c.dir/linear_list/index.cpp.obj: CMakeFiles/c.dir/flags.make
 CMakeFiles/c.dir/linear_list/index.cpp.obj: ../linear_list/index.cpp
 CMakeFiles/c.dir/linear_list/index.cpp.obj: CMakeFiles/c.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\study\data-structure\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object CMakeFiles/c.dir/linear_list/index.cpp.obj"
-	C:\PROGRA~1\mingw64\bin\G__~1.EXE $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/c.dir/linear_list/index.cpp.obj -MF CMakeFiles\c.dir\linear_list\index.cpp.obj.d -o CMakeFiles\c.dir\linear_list\index.cpp.obj -c C:\study\data-structure\linear_list\index.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\code\data-structure\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object CMakeFiles/c.dir/linear_list/index.cpp.obj"
+	C:\code\mingw64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/c.dir/linear_list/index.cpp.obj -MF CMakeFiles\c.dir\linear_list\index.cpp.obj.d -o CMakeFiles\c.dir\linear_list\index.cpp.obj -c C:\code\data-structure\linear_list\index.cpp
 
 CMakeFiles/c.dir/linear_list/index.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/c.dir/linear_list/index.cpp.i"
-	C:\PROGRA~1\mingw64\bin\G__~1.EXE $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E C:\study\data-structure\linear_list\index.cpp > CMakeFiles\c.dir\linear_list\index.cpp.i
+	C:\code\mingw64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E C:\code\data-structure\linear_list\index.cpp > CMakeFiles\c.dir\linear_list\index.cpp.i
 
 CMakeFiles/c.dir/linear_list/index.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/c.dir/linear_list/index.cpp.s"
-	C:\PROGRA~1\mingw64\bin\G__~1.EXE $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S C:\study\data-structure\linear_list\index.cpp -o CMakeFiles\c.dir\linear_list\index.cpp.s
+	C:\code\mingw64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S C:\code\data-structure\linear_list\index.cpp -o CMakeFiles\c.dir\linear_list\index.cpp.s
 
 # Object files for target c
 c_OBJECTS = \
@@ -110,7 +110,7 @@ c.exe: CMakeFiles/c.dir/build.make
 c.exe: CMakeFiles/c.dir/linklibs.rsp
 c.exe: CMakeFiles/c.dir/objects1.rsp
 c.exe: CMakeFiles/c.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=C:\study\data-structure\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Linking CXX executable c.exe"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=C:\code\data-structure\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Linking CXX executable c.exe"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles\c.dir\link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.
@@ -122,6 +122,6 @@ CMakeFiles/c.dir/clean:
 .PHONY : CMakeFiles/c.dir/clean
 
 CMakeFiles/c.dir/depend:
-	$(CMAKE_COMMAND) -E cmake_depends "MinGW Makefiles" C:\study\data-structure C:\study\data-structure C:\study\data-structure\cmake-build-debug C:\study\data-structure\cmake-build-debug C:\study\data-structure\cmake-build-debug\CMakeFiles\c.dir\DependInfo.cmake --color=$(COLOR)
+	$(CMAKE_COMMAND) -E cmake_depends "MinGW Makefiles" C:\code\data-structure C:\code\data-structure C:\code\data-structure\cmake-build-debug C:\code\data-structure\cmake-build-debug C:\code\data-structure\cmake-build-debug\CMakeFiles\c.dir\DependInfo.cmake --color=$(COLOR)
 .PHONY : CMakeFiles/c.dir/depend
 

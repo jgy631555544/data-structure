@@ -8,8 +8,8 @@ set(CMAKE_DEPENDS_LANGUAGES
 
 # The set of dependency files which are needed:
 set(CMAKE_DEPENDS_DEPENDENCY_FILES
-  "C:/study/data-structure/linear_list/index.cpp" "CMakeFiles/c.dir/linear_list/index.cpp.obj" "gcc" "CMakeFiles/c.dir/linear_list/index.cpp.obj.d"
-  "C:/study/data-structure/main.cpp" "CMakeFiles/c.dir/main.cpp.obj" "gcc" "CMakeFiles/c.dir/main.cpp.obj.d"
+  "C:/code/data-structure/linear_list/index.cpp" "CMakeFiles/c.dir/linear_list/index.cpp.obj" "gcc" "CMakeFiles/c.dir/linear_list/index.cpp.obj.d"
+  "C:/code/data-structure/main.cpp" "CMakeFiles/c.dir/main.cpp.obj" "gcc" "CMakeFiles/c.dir/main.cpp.obj.d"
   )
 
 # Targets to which this target links.
