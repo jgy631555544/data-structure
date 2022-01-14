@@ -36,10 +36,10 @@ void InitListDynamic(SqlistDynamic &dynamicList) {
 bool ListInsert(SqlistStatic &L, int i, int e) {
     if (i < 1 || i > L.length + 1) {
         return false;
-    }
+    };
     if (L.length >= MaxSize) {
-        return false
-    }
+        return false;
+    };
     for (int index = L.length; index >= i; i--) {
         L.data[index] = L.data[index - 1];
     };
