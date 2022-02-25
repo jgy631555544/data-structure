@@ -2,6 +2,7 @@
 // Created by SESA622684 on 2022/1/12.
 //
 
+#include <stdio.h>
 #include <stdlib.h>
 
 typedef struct DNode {
@@ -40,6 +41,49 @@ bool InsertNextElem(DNode *p, DNode *s) {
     return true;
 }
 
+bool DeleteNextNode(DNode *p) {
+    if (p == NULL) return false;
+    DNode *node = p->next;
+    p->next = node->next;
+    if (node->next != NULL) return false;
+    node->next->prior = p;
+    free(node);
+    return true;
+}
+
+bool DestoryList(DLinkList L) {
+    if (L == NULL) return true;
+    while (L->next != NULL) DeleteNextNode(L);
+    free(L);
+    return true;
+}
+
+bool PrintNextElems(DNode *p) {
+    if (p == NULL) return true;
+    while (p != NULL) {
+        printf("节点的值为：%d", p->data);
+        p = p->next;
+    };
+    return true;
+}
+
+bool PrintPriorElems(DNode *p) {
+    if (p == NULL) return true;
+    while (p != NULL) {
+        printf("节点的值为：%d", p->data);
+        p = p->prior;
+    };
+    return true;
+};
+
+bool PrintPriorElemsOverHead(DNode *p) {
+    if (p == NULL) return true;
+    while (p->prior != NULL) {
+        printf("节点的值为：%d", p->data);
+        p = p->prior;
+    };
+    return true;
+}
 
 int main() {
 
