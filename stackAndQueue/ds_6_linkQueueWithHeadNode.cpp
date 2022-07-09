@@ -14,11 +14,11 @@ typedef struct {
     LinkNode *front, *rear;
 } LinkQueue;
 
-void InitQueue(LinkQueue &Q);//³õÊ¼»¯
-bool EnQueue(LinkQueue &Q, int x);//Èë¶Ó²Ù×÷
-bool DeQueue(LinkQueue &Q, int &x);//³ö¶Ó
-bool GetHead(LinkQueue Q, int &x);//»ñÈ¡Í·ÔªËØ
-bool QueueEmpty(LinkQueue Q);//ÅĞ¿Õ
+void InitQueue(LinkQueue &Q);//åˆå§‹åŒ–
+bool EnQueue(LinkQueue &Q, int x);//å…¥é˜Ÿæ“ä½œ
+bool DeQueue(LinkQueue &Q, int &x);//å‡ºé˜Ÿ
+bool GetHead(LinkQueue Q, int &x);//è·å–å¤´å…ƒç´ 
+bool QueueEmpty(LinkQueue Q);//åˆ¤ç©º
 
 void InitQueue(LinkQueue &Q) {
     Q.front = (LinkNode *) malloc(sizeof(LinkNode));
@@ -55,59 +55,59 @@ bool QueueEmpty(LinkQueue Q) {
     return Q.front == Q.rear ? true : false;
 }
 
-/**²âÊÔÄ£¿é**/
+/**æµ‹è¯•æ¨¡å—**/
 void PrintQueue(LinkQueue Q) {
-    printf("¿ªÊ¼´òÓ¡¶ÓÁĞ\n");
+    printf("å¼€å§‹æ‰“å°é˜Ÿåˆ—\n");
     int i = 0;
     while (Q.front != Q.rear) {
         Q.front = Q.front->next;
         printf("Q[%d]=%d\n", i++, Q.front->data);
     }
-    printf("´òÓ¡Íê±Ï£¡\n");
+    printf("æ‰“å°å®Œæ¯•ï¼\n");
 }
 
-//²âÊÔº¯Êı
+//æµ‹è¯•å‡½æ•°
 void TestLinkQueue() {
-    printf("¿ªÊ¼²âÊÔ£¡\n");
+    printf("å¼€å§‹æµ‹è¯•ï¼\n");
     LinkQueue Q;
     InitQueue(Q);
     if (EnQueue(Q, 1)) {
-        printf("Èë¶Ó³É¹¦À²£¡\n");
+        printf("å…¥é˜ŸæˆåŠŸå•¦ï¼\n");
     } else {
-        printf("Èë¶ÓÊ§°ÜÁË\n");
+        printf("å…¥é˜Ÿå¤±è´¥äº†\n");
     }
     if (EnQueue(Q, 2)) {
-        printf("Èë¶ÓÓÖ³É¹¦À²£¡\n");
+        printf("å…¥é˜ŸåˆæˆåŠŸå•¦ï¼\n");
     } else {
-        printf("Èë¶ÓÓÖÊ§°ÜÁË\n");
+        printf("å…¥é˜Ÿåˆå¤±è´¥äº†\n");
     }
     PrintQueue(Q);
     int x;
     if (DeQueue(Q, x)) {
-        printf("³ö¶Ó³É¹¦£¬µ¯³öµÄÔªËØÎª:%d\n", x);
+        printf("å‡ºé˜ŸæˆåŠŸï¼Œå¼¹å‡ºçš„å…ƒç´ ä¸º:%d\n", x);
     } else {
-        printf("³ö¶ÓÊ§°ÜÁË£¬ÔÙ¼ì³öÒ»ÏÂ°É£¡\n");
+        printf("å‡ºé˜Ÿå¤±è´¥äº†ï¼Œå†æ£€å‡ºä¸€ä¸‹å§ï¼\n");
     }
     if (GetHead(Q, x)) {
-        printf("»ñÈ¡¶ÓÍ·³É¹¦£¡,¶ÓÍ·ÔªËØÎª£º%d\n", x);
+        printf("è·å–é˜Ÿå¤´æˆåŠŸï¼,é˜Ÿå¤´å…ƒç´ ä¸ºï¼š%d\n", x);
     } else {
-        printf("»ñÈ¡¶ÓÍ·ÔªËØÊ§°Ü£¡\n");
+        printf("è·å–é˜Ÿå¤´å…ƒç´ å¤±è´¥ï¼\n");
     }
     if (DeQueue(Q, x)) {
-        printf("³ö¶Ó³É¹¦£¬µ¯³öµÄÔªËØÎª:%d\n", x);
+        printf("å‡ºé˜ŸæˆåŠŸï¼Œå¼¹å‡ºçš„å…ƒç´ ä¸º:%d\n", x);
     } else {
-        printf("³ö¶ÓÊ§°ÜÁË£¬ÔÙ¼ì³öÒ»ÏÂ°É£¡\n");
+        printf("å‡ºé˜Ÿå¤±è´¥äº†ï¼Œå†æ£€å‡ºä¸€ä¸‹å§ï¼\n");
     }
     if (QueueEmpty(Q)) {
-        printf("¶Ó¿ÕÀ²\n");
+        printf("é˜Ÿç©ºå•¦\n");
     } else {
-        printf("¶Ó·Ç¿Õ\n");
+        printf("é˜Ÿéç©º\n");
     }
 
-    printf("²âÊÔ½áÊø!\n");
+    printf("æµ‹è¯•ç»“æŸ!\n");
 }
 
-/**²âÊÔÄ£¿é**/
+/**æµ‹è¯•æ¨¡å—**/
 
 int main() {
     TestLinkQueue();

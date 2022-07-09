@@ -1,5 +1,5 @@
 //
-// Created by ½ğ¹ÚÓî on 2022/7/6.
+// Created by é‡‘å† å®‡ on 2022/7/6.
 //
 #include <stdio.h>
 
@@ -11,11 +11,11 @@ typedef struct {
     int tag;
 } circleSequenceStrack;
 
-void InitQueue(circleSequenceStrack &Q);//³õÊ¼»¯
-bool QueueEmpty(circleSequenceStrack Q);//ÅĞ¿Õ
-bool EnQueue(circleSequenceStrack &Q, int t);//Èë¶Ó²Ù×÷
-bool DeQueue(circleSequenceStrack &Q, int &x);//³ö¶Ó²Ù×÷
-bool GetHead(circleSequenceStrack Q, int &x);//»ñÈ¡¶ÓÍ·ÔªËØ,ÓÃx·µ»Ø
+void InitQueue(circleSequenceStrack &Q);//åˆå§‹åŒ–
+bool QueueEmpty(circleSequenceStrack Q);//åˆ¤ç©º
+bool EnQueue(circleSequenceStrack &Q, int t);//å…¥é˜Ÿæ“ä½œ
+bool DeQueue(circleSequenceStrack &Q, int &x);//å‡ºé˜Ÿæ“ä½œ
+bool GetHead(circleSequenceStrack Q, int &x);//è·å–é˜Ÿå¤´å…ƒç´ ,ç”¨xè¿”å›
 
 void InitQueue(circleSequenceStrack &Q) {
     Q.front = Q.rear = 0;
@@ -49,58 +49,58 @@ bool GetHead(circleSequenceStrack Q, int &x) {
     return true;
 }
 
-/**²âÊÔÄ£¿é**/
-//´òÓ¡Õû¸ö¶ÓÁĞ
+/**æµ‹è¯•æ¨¡å—**/
+//æ‰“å°æ•´ä¸ªé˜Ÿåˆ—
 void PrintQueue(circleSequenceStrack Q){
-    printf("¿ªÊ¼´òÓ¡¶ÓÁĞ\n");
+    printf("å¼€å§‹æ‰“å°é˜Ÿåˆ—\n");
     while(Q.front!=Q.rear){
         printf("Q[%d]=%d\n",Q.front,Q.data[Q.front]);
         Q.front=(Q.front+1)%MaxSize;
     }
-    printf("´òÓ¡Íê±Ï£¡\n");
+    printf("æ‰“å°å®Œæ¯•ï¼\n");
 }
 
-//²âÊÔ
+//æµ‹è¯•
 void TestQueue(){
-    printf("¿ªÊ¼²âÊÔ£¡\n");
+    printf("å¼€å§‹æµ‹è¯•ï¼\n");
     circleSequenceStrack Q;
     InitQueue(Q);
     if (EnQueue(Q, 1)) {
-        printf("Èë¶Ó³É¹¦À²£¡\n");
+        printf("å…¥é˜ŸæˆåŠŸå•¦ï¼\n");
     } else {
-        printf("Èë¶ÓÊ§°ÜÁË\n");
+        printf("å…¥é˜Ÿå¤±è´¥äº†\n");
     }
     if (EnQueue(Q, 2)) {
-        printf("Èë¶ÓÓÖ³É¹¦À²£¡\n");
+        printf("å…¥é˜ŸåˆæˆåŠŸå•¦ï¼\n");
     } else {
-        printf("Èë¶ÓÓÖÊ§°ÜÁË\n");
+        printf("å…¥é˜Ÿåˆå¤±è´¥äº†\n");
     }
     PrintQueue(Q);
     int x;
     if (DeQueue(Q, x)) {
-        printf("³ö¶Ó³É¹¦£¬µ¯³öµÄÔªËØÎª:%d\n", x);
+        printf("å‡ºé˜ŸæˆåŠŸï¼Œå¼¹å‡ºçš„å…ƒç´ ä¸º:%d\n", x);
     } else {
-        printf("³ö¶ÓÊ§°ÜÁË£¬ÔÙ¼ì³öÒ»ÏÂ°É£¡\n");
+        printf("å‡ºé˜Ÿå¤±è´¥äº†ï¼Œå†æ£€å‡ºä¸€ä¸‹å§ï¼\n");
     }
     if (GetHead(Q, x)) {
-        printf("»ñÈ¡¶ÓÍ·³É¹¦£¡,¶ÓÍ·ÔªËØÎª£º%d\n", x);
+        printf("è·å–é˜Ÿå¤´æˆåŠŸï¼,é˜Ÿå¤´å…ƒç´ ä¸ºï¼š%d\n", x);
     } else {
-        printf("»ñÈ¡¶ÓÍ·ÔªËØÊ§°Ü£¡\n");
+        printf("è·å–é˜Ÿå¤´å…ƒç´ å¤±è´¥ï¼\n");
     }
     if (DeQueue(Q, x)) {
-        printf("³ö¶Ó³É¹¦£¬µ¯³öµÄÔªËØÎª:%d\n", x);
+        printf("å‡ºé˜ŸæˆåŠŸï¼Œå¼¹å‡ºçš„å…ƒç´ ä¸º:%d\n", x);
     } else {
-        printf("³ö¶ÓÊ§°ÜÁË£¬ÔÙ¼ì³öÒ»ÏÂ°É£¡\n");
+        printf("å‡ºé˜Ÿå¤±è´¥äº†ï¼Œå†æ£€å‡ºä¸€ä¸‹å§ï¼\n");
     }
     if (QueueEmpty(Q)) {
-        printf("¶Ó¿ÕÀ²\n");
+        printf("é˜Ÿç©ºå•¦\n");
     } else {
-        printf("¶Ó·Ç¿Õ\n");
+        printf("é˜Ÿéç©º\n");
     }
 
-    printf("½áÊø²âÊÔ£¡\n");
+    printf("ç»“æŸæµ‹è¯•ï¼\n");
 }
-/**²âÊÔÄ£¿é**/
+/**æµ‹è¯•æ¨¡å—**/
 
 int main(){
     TestQueue();
