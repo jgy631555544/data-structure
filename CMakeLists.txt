@@ -21,3 +21,4 @@ add_executable(ds_5_circleSequenceStack stackAndQueue/ds_5_circleSequenceStack.c
 add_executable(ds_6_linkQueueWithHeadNode stackAndQueue/ds_6_linkQueueWithHeadNode.cpp)
 add_executable(ds_7_linkQueue stackAndQueue/ds_7_linkQueue.cpp)
 add_executable(ds_8_queueApplication stackAndQueue/ds_8_queueApplication.cpp)
+add_executable(kmp string/kmp.cpp)
